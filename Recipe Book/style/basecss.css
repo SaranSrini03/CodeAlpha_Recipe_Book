@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --orange : #b96400;
+    --brown : #231300;
+    --white: #ffffff;
+}
+body{
+    background-color: var(--orange);
+}
+.topContainer{
+    display: flex; 
+}
+.topContainer > p{
+    padding: 30px 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: var(--white);
+}
+.content > .text1{
+    width: 300px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-top: 100px;
+    margin-left: 120px;
+    line-height: 40px;
+    text-shadow: 3px 3px 10px black;
+}
+.content > .text2{
+    font-size: 90px;
+    margin-top: -30px;
+    margin-left: 120px;
+    font-weight: 600;
+    color: var(--brown);
+    text-shadow: 3px 3px 1px black;
+}
+.content > .text3{
+    width: 400px;
+    font-size: 15px;
+    color: white;
+    margin-left: 120px;
+    margin-top: -5px;
+    text-shadow: 3px 3px 10px black;
+}
+.content > .buttonplace{
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 600px;
+    
+}
+.content > .buttonplace > a > button{
+    border-radius: 10px;
+    margin-left: 50px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: var(--brown);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.09s ease-in-out;
+}
+.content > .buttonplace > a > button{
+    color: white;
+    text-decoration: none;
+}
+.content > .buttonplace > a > button:hover{
+    background-color: black;
+}
+.content > #image1{
+    position: absolute;
+    margin-left: 600px;
+    filter: drop-shadow(1px 1px 10px);
+}
+

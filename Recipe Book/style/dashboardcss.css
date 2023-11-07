@@ -1,0 +1,317 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+:root{
+    --orange : #b96400;
+    --lightorange : #6a3800;
+    --brown : #231300;
+    --white: #ffffff;
+    --black:#141414;
+}
+body{
+    background-color: var(--orange);
+}
+.topcontainer{
+    width: 100%;
+    height: 50px;
+    background-color: var(--black);
+}
+.topcontainer > .logo{
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 600;
+    padding: 10px 10px 10px 50px;
+}
+#content{
+    display: flex;
+    width: 100%;
+    height: 92.2vh;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+#content > #addbox{
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--black);
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    transition: 0.07s ease-in;
+    cursor: pointer;
+    user-select: none;
+}
+#content > #addbox > p{
+
+    margin-top: -50px;
+    font-size: 150px;
+    pointer-events: none;
+}
+#content > #addbox:hover{
+    transform: scale(1.1);
+}
+#content > #box{
+    overflow-wrap: break-word;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--black);
+    margin: 10px;
+    transition: 0.07s ease-in;
+    background-color: var(--black);
+    padding: 10px;
+    overflow-y: hidden;
+    cursor: pointer;
+
+}
+#content > #box > h1{
+    margin-top: 5px;
+    color: var(--white);
+    text-transform: capitalize;
+    outline: none;
+}
+#content > #box > h3{
+    margin-top: 50px;
+    color: gray;
+    outline: none;
+    text-transform: capitalize;
+}
+#content > #box:hover{
+    transform: scale(1.1);
+}
+#detailboard{
+    position: absolute;
+    top: 100px;
+    left:35%;
+    width: 400px;
+    height: 500px;
+    max-width: 500px;
+    background-color: var(--black);
+    box-shadow: 10px 10px 20px ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+#detailboard > #recipeform > #close{
+    position: absolute;
+    color: var(--orange);
+    font-size: 40px;
+    margin-top: -55px;
+    cursor: pointer;
+}
+#detailboard > #recipeform > #close:hover{
+    color: red;
+}
+#detailboard > #recipeform > p{
+    text-align: center;
+    font-size: 30px;
+    color: var(--orange);
+    font-weight: 600;
+
+
+}
+#detailboard > #recipeform > input{
+    outline: none;
+    width: 95%;
+    margin: 10px;
+    height: 50px;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px black solid;
+    background-color: var(--black);
+    color: var(--orange);
+}
+#detailboard > #recipeform > #donebtn{
+    top: 46px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    background-color:var(--orange);
+    cursor: pointer;
+    margin-left: 40%;
+    border-radius: 20px;
+    padding: 4px;
+    font-weight: 600;
+    border: none;
+}
+#detailboard > #recipeform > textarea{
+    resize: none;
+    background-color: var(--black);
+    border: 1px black solid;
+    margin: 10px;
+    outline: none;
+    color: var(--orange);
+    padding: 10px;
+
+}
+#deletebutton {
+
+    background-color: var(--orange);
+    color: white; 
+    border: none;
+    width: 100%;
+    margin-top: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+  
+#deletebutton:hover {
+    background-color: darkred;
+}
+#fullscreenbutton{
+    position: absolute;
+    margin-left: -90px;
+    margin-top: -20px;
+    font-size: 30px;
+    color: var(--orange);
+    width: 20px;
+    margin-right: 140px;
+}
+#fullscreenbutton:hover{
+    color: var(--lightorange);
+}
+#editbutton{
+    position: absolute;
+    color: var(--orange);
+    background-color: black;
+    width: 35px;
+    margin-top: 150px;
+    margin-left: -90px;
+    font-size: 25px;
+}
+#editbutton:hover{
+    transform: scale(1.3);
+}
+
+::-webkit-input-placeholder{ 
+    font-size: 15px;
+    font-weight:600;
+}
+::-moz-placeholder{
+    font-size: 15px;
+    font-weight:600;
+}
+:-ms-input-placeholder{ 
+    font-size: 15px;
+    font-weight:600;
+}
+:-moz-placeholder { 
+    font-size: 15px;
+    font-weight:600;
+}
+#fullscreen{
+    position: absolute;
+    top: 100px;
+    left:35%;
+    width: 400px;
+    height: 500px;
+    max-width: 500px;
+    background-color: var(--black);
+    box-shadow: 10px 10px 20px ;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+#fullscreen > #title{
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--orange);
+}
+#fullscreen > #name{
+    text-align: right;
+    color: var(--lightorange);  
+}
+#fullscreen > #ingredients{
+    text-align: left;
+    margin-top: 20px;
+    color: var(--orange);
+    font-weight: 400;
+    padding: 0px 50px;
+}
+#fullscreen > #directions{
+    text-align: left;
+    margin-top: 20px;
+    color: var(--orange);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0px 50px;
+
+}
+#fullscreen > #close{
+    position: absolute;
+    cursor:pointer ;
+    font-size: 25px;
+    color: var(--orange);
+}
+#fullscreen > #close:hover{
+    color: red;
+}
+#texty{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--lightorange);
+}
+#fullscreen > #pen{
+    font-size: 30px;
+    color: var(--orange);
+    float: right;
+    cursor: pointer;
+    display: block;
+}
+#fullscreen > #pen:hover{
+    color: var(--lightorange);
+}
+#fullscreen > #tick{
+    font-size: 30px;
+    color: var(--orange);
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+#fullscreen > #tick:hover{
+    color: green;
+}
+#text1{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .topcontainer > .logo {
+        font-size: 16px;
+    }
+    #content > #addbox, #content > #box {
+        width: 100%;
+        margin: 10px;
+    }
+    #detailboard {
+        width: 100%;
+        left: 0;
+    }
+    #fullscreen {
+        width: 100%;
+        left: 0;
+    }
+    #fullscreen > #title {
+        font-size: 20px;
+    }
+    #fullscreen > #name {
+        font-size: 16px;
+    }
+    #fullscreen > #ingredients, #fullscreen > #directions {
+        font-size: 14px;
+    }
+    #fullscreen > #close {
+        font-size: 20px;
+    }
+}
